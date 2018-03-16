@@ -1,0 +1,72 @@
+{
+  "name": "@microbusiness/redux-form-react-native-elements",
+  "version": "0.0.1",
+  "description": "Micro Business Redux Form React Native Elements",
+  "main": "./src/index.js",
+  "scripts": {
+    "lint": "eslint --ext .jsx --ext .js src",
+    "fixlint": "eslint --fix --ext .jsx --ext .js src",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "flow": "flow",
+    "precommit": "lint-staged"
+  },
+  "author": "Micro Business ltd<micro.business.ltd@gmail.com>",
+  "homepage": "https://bitbucket.org/microbusinessltd/micro-business-redux-form-react-native-elements#readme",
+  "dependencies": {
+    "email-validator": "^1.1.1"
+  },
+  "peerDependencies": {
+    "@microbusiness/common-react": "^1.x",
+    "i18next": "^10.x",
+    "immutable": "^4.x",
+    "prop-types": "^15.x",
+    "react": "^16.x",
+    "react-i18next": "^7.x",
+    "react-native": "^0.x",
+    "react-native-elements": "^1.x"
+  },
+  "devDependencies": {
+    "@microbusiness/common-react": "^1.2.0",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.2",
+    "babel-jest": "^23.0.0-alpha.0",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-react-native-stage-0": "^1.0.1",
+    "eslint": "^4.18.2",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-flowtype": "^2.46.1",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jest": "^21.15.0",
+    "eslint-plugin-jsx-a11y": "6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "eslint-plugin-react-native": "^3.2.1",
+    "flow-bin": "^0.68.0",
+    "husky": "^0.14.3",
+    "i18next": "^10.5.0",
+    "immutable": "^4.0.0-rc.9",
+    "jest": "^23.0.0-alpha.0",
+    "lint-staged": "^7.0.0",
+    "prettier": "^1.11.1",
+    "prop-types": "^15.6.1",
+    "react": "^16.2.0",
+    "react-i18next": "^7.5.0",
+    "react-native": "^0.54.2",
+    "react-native-elements": "^1.0.0-beta3"
+  },
+  "jest": {
+    "rootDir": "./src"
+  },
+  "pre-commit": "lint:staged",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org:microbusinessltd/micro-business-redux-form-react-native-elements.git"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json,css}": [
+      "prettier --write --single-quote true --trailing-comma all --print-width 150",
+      "npm run fixlint",
+      "git add"
+    ]
+  }
+}
