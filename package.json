@@ -1,6 +1,6 @@
 {
   "name": "@microbusiness/redux-form-react-native-elements",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Micro Business Redux Form React Native Elements",
   "main": "./src/index.js",
   "scripts": {
@@ -23,7 +23,6 @@
     "prop-types": "^15.x",
     "react": "^16.x",
     "react-i18next": "^7.x",
-    "react-native": "^0.x",
     "react-native-elements": "^1.x"
   },
   "devDependencies": {
@@ -43,7 +42,7 @@
     "eslint-plugin-react-native": "^3.2.1",
     "flow-bin": "^0.68.0",
     "husky": "^0.14.3",
-    "i18next": "^10.5.0",
+    "i18next": "^10.5.1",
     "immutable": "^4.0.0-rc.9",
     "jest": "^23.0.0-alpha.0",
     "lint-staged": "^7.0.0",
@@ -51,7 +50,6 @@
     "prop-types": "^15.6.1",
     "react": "^16.2.0",
     "react-i18next": "^7.5.0",
-    "react-native": "^0.54.2",
     "react-native-elements": "^1.0.0-beta3"
   },
   "jest": {
